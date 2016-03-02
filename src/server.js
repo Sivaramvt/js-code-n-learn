@@ -1,3 +1,7 @@
+/*
+Source: https://gist.github.com/ryanflorence/701407
+*/
+
 var http = require("http"),
     url = require("url"),
     path = require("path"),

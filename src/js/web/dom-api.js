@@ -1,5 +1,24 @@
-alert('test');
-var paragraphs = document.getElementsByTagName("P");
-// paragraphs[0] is the first <p> element
-// paragraphs[1] is the second <p> element, etc.
-alert(paragraphs[0].nodeName);
+/* Key DOM data types
+document - represents the html.
+element - represents a node.
+nodeList - array of elements
+attribute - Similar to nodes.
+
+Details -
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction */
+
+
+window.onload = function() {
+  alert(window.content);
+    var heading = document.createElement('h1');
+     var headingText = document.createTextNode('Big head');
+      heading.appendChild(headingText);
+      document.body.appendChild(heading);
+}
+
+
+  function changeColor(newColor) {
+    var element = document.getElementsByTagName('button');
+    element.style.color = 'red';
+
+  }
