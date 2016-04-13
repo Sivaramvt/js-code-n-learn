@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>jQuery - Show Random Image</title>
+    <script src="../../js/vendor/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button.random").click(function() {
+                $("img").attr("src", "http://loremflickr.com/640/480");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="elements">
+        <img/>
+        <button class="random">Change Image</button>
+    </div>
+</body>
+</html>
